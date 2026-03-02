@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #56baa6;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .card{
+                width:30%;
+                border: none;
+                 display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+
+               
+                
+            }
+            label{
+               
+                color:#56baa6;
+                padding: 5px;
+                font-size: 15px;
+                
+
+            }
+            input{
+                display: block;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid black;
+                width:100%;
+                padding: 5px;
+                margin-bottom: 5px;
+               
+            }
+            input:hover{
+                border-color: #56baa6;
+            }
+            button{
+                padding: 10px 20px;
+                width:105%;   
+                margin-top: 10px;     
+                background-color:#1abc9c ;
+                outline: none;
+                border: none;
+               
+                border-radius: 2px;
+                color: white;
+                font-weight: bold;
+
+            }
+            #second{
+                color: #719d93;
+                font-size: 10px;
+               
+
+            }
+
+            
+           
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <p>USER LOGIN</p>
+            <div class="login_form">
+            <label for="u">Username</label>
+            <input type="text" id="u">
+            <label for="p">Password</label>
+            <input type="password" id="p">
+             <button>LOGIN</button>
+            
+            </div>
+           
+            <p id="second">Forgot Password?</p>
+        </div>
+    </body>
+</html>

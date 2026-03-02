@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                background-color: #d6d5f5;
+            }
+            .card{
+                width:20%;
+                margin: auto;
+                border-radius: 15px;
+                background-color: #8887c5;
+                padding: 20px;
+                font-size:small;
+               
+                
+            }
+            input{
+                width:100%;
+             margin-bottom: 10px;
+             padding: 10px;
+             border-radius: 5px;
+             outline: none;
+             border: none;
+                
+
+            }
+            .one{
+                
+                display: flex;
+                gap: 10px;
+            }
+            .one input{
+                width:50% ;
+                
+            }
+            h1{
+                color: white;
+                text-align: center;
+            }
+            .two input {
+                width: 5%; 
+                           
+                
+            }
+            .three{
+              
+                text-align: center;
+            }
+            .three a{
+               color: white;
+
+
+            }
+            .button_1{
+              width:70%;
+              margin: 0px 35px;
+              color: #86807b;
+              background-color: #c3b9b1;
+              font-weight: bold;
+              border-radius: 50px;
+            
+            }
+            label{
+                color: white;
+                margin-top: 2px;
+            }
+            .two{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+            }
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Sign UP</h1>
+            <div class="one">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Password">
+            <input type="text" placeholder="Password Confirm">
+            <div class="two">
+            <input type="checkbox" id="ch"> <label for="ch">I accept the terms 	&amp; privacy ploicy</label>
+            </div>
+            <input type="submit" value="Sign UP" class="button_1">
+            <p class="three">Already have an account?<a href="#">login here</a></p>
+            <p class="three">copyright&copy; yourcompany.com</p>
+            
+
+        </div>
+        
+    </body>
+</html>

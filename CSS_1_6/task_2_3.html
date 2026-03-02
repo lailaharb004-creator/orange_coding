@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+
+                
+            }
+            body{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(to bottom ,#3bb9a3,#5bc5a5,#8dd7aa);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .card{
+                border-style:solid;
+                margin: 10px;
+                border-radius: 5px;;
+                border: none;
+                background-color: white;
+               
+
+            }
+
+            
+            #first{
+                text-align: center;
+                color:#10857b;
+                font-size: 30px;
+                margin: 50px 50px 30px;
+
+
+            }
+            .one input {
+                display: block;
+                width:200px;
+                padding:20px;
+            }
+            .one_1{
+                margin:0px 50px 50px;
+            }
+            .one_2 {  
+                  margin:0px 50px;
+            }
+            .two{
+                 margin:0px 50px 5px ;
+            }
+            button{
+                color:white;
+                padding:10px 20px;
+                margin-left: 130px;
+                margin-bottom: 10px;
+                background-color: #0d847a;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+
+                
+            }
+            p{
+                text-align: center;
+                font-size: 12px;
+                
+            }
+            span{
+                color:#0d847a;
+            }
+            #second
+             {
+                margin-bottom:30px;;
+            }
+            label{
+                font-size: 12px;
+            }
+
+           
+
+
+           
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <p id="first">Login</p>
+            <div class="one">
+                    <input class="one_1"type="email" placeholder="Email">
+                    <input class="one_2" type="password" placeholder="Password">
+            </div>
+            <div class="two">
+                <input type="checkbox" id="ch"><label for="ch">Show Password</label>
+            </div>
+            <button>SIGN IN</button>
+            <p>Forget <span>Username /password?</span> </p>
+            <p id="second">Don't have an account? <span>Sign up</span></p>
+        </div>
+    </body>
+</html>

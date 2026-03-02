@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #a0c8fd;
+                color:#3d5e90;
+                
+            }
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 10px;
+                background-color: white;
+                margin:10px;
+                padding:20px;
+                
+            }
+            #first{
+                text-align: center;
+                font-size: larger;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            #second{
+                text-align:center;
+                font-size: small;
+            }
+            .one{
+                align-self: flex-start;
+                padding:10px;
+            }
+            .one label{
+                display: block;
+            }
+            .one input{
+                margin-bottom: 5px;;
+                padding: 5px 15px;
+                border: 1px solid  #a0c8fd;
+                border-radius: 5px;
+            }
+            button{
+                color:white;
+                background-color: #45acff;
+                border:none;
+                border-radius: 5px;
+                padding:10px 20px;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <p id="first">CODEWITHRANDOM</p>
+            <p id="second">Thank you for being with me</p>
+            <div class="one">
+                <label for="a">Name</label>
+                <input type="text" id="a">
+                <label for="b">E-mail</label>
+                <input type="text" id="c">
+                <label for="c">Password</label>
+                <input type="password" id="c">
+                <label for="d">Repeat password</label>
+                <input type="password" id="d">
+            </div>
+            <button>Register</button>
+        </div>
+
+
+    </body>
+</html>

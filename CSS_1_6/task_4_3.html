@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            body{
+                 display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            p{
+                text-align: center;
+                color:white;
+                font-size: large;
+                font-weight: bold;
+            }
+            .card{
+                width:30%;
+                
+                border: 1px solid;
+            }
+            input{
+                display: block;
+                width:150%;
+                
+            }
+            textarea{
+                display: block;
+                width:150%;
+                height: 100%;
+            }
+            ***********
+           
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="card">
+        <p>Contact Us</p>
+        
+            <input type="text" placeholder="Full Name">
+            <input type="Email" placeholder="Email">
+            <input type="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <textarea  placeholder="Your Message Here ..." rows="20"></textarea>
+            <Button>Send</Button>
+       
+        
+        </div>
+    </body>
+</html>
