@@ -3,11 +3,11 @@ let str="";
 for(let i=1;i<=200;i++){
     str=String(i);
     if(str.length>=2){
-        for(let j=1;j<str.length;j++){
-            diff=Number(str.at(j));
-            diff-=Number(str.at(0))
+        diff=str.at(str.length-1);
+        for(let j=0;j<str.length-1;j++){
+            diff-=Number(str.at(j));
         }
-        if ( diff===2){
+        if ( diff===2 ){
             document.write(i+"<br>");
         }
     }

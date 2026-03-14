@@ -25,3 +25,21 @@ for(let i=1;i<=500;i++){
     }
    
     }
+
+    /*-------------------------------------------------*/
+    let str1="";
+    for(let i=1;i<=500;i++){
+      str1=String(i);
+     
+        if(str1.length===2){
+          if (Number(str1.at(0))<Number(str1.at(1))){
+            document.write(i+"<br>");
+          }
+        }
+        else if(str1.length===3){
+          if (Number(str1.at(0))<Number(str1.at(1)) && Number(str1.at(1)) <Number(str1.at(2))){
+            document.write(i+"<br>");
+        }
+        }
+      
+    }
