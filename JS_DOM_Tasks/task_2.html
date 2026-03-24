@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let one=document.createElement("div");
+        let two=document.createElement("h1");
+        let three=document.createElement("p");
+        let four=document.createElement("img");
+        let body =document.body
+        two.textContent="My JS Tasks";
+        three.textContent="DOM Tasks";
+
+        four.src="js-file.png";
+        four.alt="no-image"
+
+        one.appendChild(two);
+        one.appendChild(four);
+        one.appendChild(three);
+
+        document.body.appendChild(one);
+
+        one.classList.add("card");
+        four.classList.add("image");
+        body.classList.add("b")
+
+        four.style.height="200px";
+        four.style.width="200px";
+        one.style.display="flex";
+        one.style.flexDirection="column";
+        one.style.justifyContent="center";
+        one.style.alignItems="center";
+
+        one.style.width="25%";
+        one.style.backgroundColor="#67757c";
+        one.style.height="50vh"
+
+        body.style.display="flex";
+        body.style.justifyContent="center";
+        body.style.alignItems="center";
+
+        
+    </script>
+</body>
+</html>

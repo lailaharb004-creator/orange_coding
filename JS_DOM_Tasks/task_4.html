@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Replace Element Example</title>
+</head>
+<body>
+
+  <div id="container">
+    <p id="myParagraph" class="old-class">This is the old paragraph.</p>
+  </div>
+<script>
+    let el_1 =document.getElementById("myParagraph");
+    let parent=el_1.parentElement;
+
+    let el_2 =document.createElement("h1");
+    el_2.textContent="This is H1";
+
+    parent.replaceChild(el_2,el_1 );
+
+    el_2.classList.add("h");
+    
+
+
+
+
+</script>
+</body>
+</html>

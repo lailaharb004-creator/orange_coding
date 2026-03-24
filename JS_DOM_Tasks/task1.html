@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Hello World</h1>
+      <p>This is a paragraph</p>
+    </div>
+    <script>
+    let el =document.getElementById("main");
+    console.log(el.children);//children of div 
+    //console.log(el.parentElement.children)//siblings
+    console.log(el.nextElementSibling);
+    console.log(el.previousElementSibling);
+    
+    console.log(el.firstElementChild);
+    console.log(el.lastElementChild);
+
+
+  </script>
+  </body>
+  
+</html>
