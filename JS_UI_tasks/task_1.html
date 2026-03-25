@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width:20%;
+            border:1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <p>Hello World</p>
+    </div>
+    <script>
+        let el1=document.querySelector("div");
+        let el2=document.querySelector("p");
+        el1.addEventListener("mouseover",()=>{
+            el1.style.backgroundColor="yellow";
+            el2.style.fontWeight="bold";
+
+
+        });
+        el1.addEventListener("mouseout",()=>{
+            el1.style.background="none";
+            el2.style.fontWeight="normal";
+
+
+        });
+    </script>
+</body>
+</html>

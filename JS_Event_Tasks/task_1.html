@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button >Click Here</button>
+    <script>
+        let btn =document.querySelector("button");
+        let x=btn.textContent;
+        btn.addEventListener("click",()=> {
+            if(btn.classList.contains("btn")){
+                btn.textContent=x;
+                btn.classList.remove("btn");
+
+
+
+            }
+            else{
+        
+                btn.textContent="Clicked";
+                btn.classList.add("btn");
+
+            
+
+            }
+        
+        });
+        btn.classList.add("styling");
+
+
+        btn.style.width="20%";
+        btn.style.height="10vh";
+        btn.style.borderRadius="30px";
+        btn.style.border="none"
+        btn.style.border="1px solid black";
+        btn.style.fontWeight="bold";
+        btn.style.backgroundColor="#4C5C2D";
+        
+
+    </script>
+</body>
+</html>

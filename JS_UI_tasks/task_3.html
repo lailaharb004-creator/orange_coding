@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ Accordion</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .faq-item {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .faq-header {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background-color: #e0e0e0;
+    }
+
+    .faq-header h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .faq-header button {
+        background: none;
+        border: none;
+        color: #5d5dff;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .faq-content {
+        padding: 15px;
+        display: none;
+        font-size: 14px;
+        color: #555;
+        border-top: 1px solid #ccc;
+    }
+
+    .faq-item.active .faq-content {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="faq-item">
+    <div class="faq-header">
+        <h3>What is lorem ipsum?</h3>
+        <button>Show</button>
+    </div>
+    <div class="faq-content">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-header">
+        <h3>Why do we use it?</h3>
+        <button>Show</button>
+    </div>
+    <div class="faq-content">
+        It is a long established fact that a reader will be distracted by the readable content.
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-header">
+        <h3>Where does it come from?</h3>
+        <button>Show</button>
+    </div>
+    <div class="faq-content">
+        Contrary to popular belief, Lorem Ipsum is not simply random text.
+    </div>
+</div>
+
+<script>
+    // Select all FAQ headers
+    const faqHeaders = document.querySelectorAll(".faq-header");
+
+    faqHeaders.forEach(header => {
+        const button = header.querySelector("button");
+        const content = header.nextElementSibling; // the corresponding .faq-content
+
+        button.addEventListener("click", () => {
+            const isActive = header.parentElement.classList.toggle("active"); // toggle active class
+
+            if (isActive) {
+                button.textContent = "Hide";
+            } else {
+                button.textContent = "Show";
+            }
+        });
+    });
+</script>
+</body>
+</html>
