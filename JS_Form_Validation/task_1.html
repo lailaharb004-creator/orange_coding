@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #BFC9D1;
+        }
+        .one{
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            
+            width:40%;
+            margin-left:30%;
+            height:40vh;
+            background-color: #3c505f;
+        }
+        .two{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .three{
+           display: flex;
+           flex-direction: column;
+            justify-content: space-between;
+            
+           
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+           
+            justify-content: space-around;
+            width: 100%;
+            height:20vh;
+
+        }
+        .container{
+
+            display: flex;
+             justify-content:space-between;
+           
+            width:80%;
+        }
+        .button{
+            width:40%;
+            color:white;
+            background-color: #4C8CE4;
+            border:none;
+            border-radius: 5px;;
+             padding: 5px;;
+        }
+        input{
+            
+             width: 100%;
+              border:none;
+              padding: 5px;
+            border-radius: 5px;;
+            margin-top: 5px;
+
+        }
+        .four{
+            
+            width:35.5%;
+            margin-left:30%;
+            background-color: #435663;
+            
+            padding: 10px 25px 10px;
+            margin-top: 40px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>Basic Info Form</h1>
+    
+    <form  id="form" >
+        <div class="container">
+            <div class="two">
+                <label >First Name:</label>
+                <label >Last Name:</label>
+                <label >Email:</label>
+            </div>
+            <div class="three" >
+                <input type="text" placeholder="Enter Your First Name" id="Fname">
+                <input type="text" placeholder="Enter Your Last Name" id="Lname">
+                <input type="email" placeholder="Enter Your Email" id="email">
+                
+
+            </div>
+        </div>
+        <input type="submit" class="button">
+        
+        
+
+    </form>
+    </div>
+    <div class="four">
+        <h2>Submited Data</h2>
+        <p id="f">First Name:</p>
+        <p id="l">Last Name:</p>
+        <p id="em">Email:</p>
+
+    </div>
+    <script>
+        let Fname=document.getElementById("Fname");
+        let Lname=document.getElementById("Lname");
+        let email=document.getElementById("email");
+
+        let f=document.getElementById("f");
+        let l=document.getElementById("l");
+        let em=document.getElementById("em");
+
+
+        let form=document.getElementById("form");
+
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+
+            f.textContent=f.textContent+" "+Fname.value;
+            l.textContent=l.textContent+" "+Lname.value;
+            em.textContent=em.textContent+" "+email.value;
+        })
+
+        
+
+    </script>
+</body>
+</html>
