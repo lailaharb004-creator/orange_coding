@@ -1,0 +1,29 @@
+function test(x) {
+if (x>10) return x*2
+if (x>5) return x+5
+return x-1
+}
+
+var result=test(7)+test(12)+test(3)
+
+console.log(result)
+
+
+result =test(7) 
+
+test(7){
+    x>10 ??? false 
+    x>5 ?? true return 7+5 =12 
+}
+result=12+ test(12)
+test(12){
+    x>10  ??? true return 12*2 =24
+}
+result=12+24+test(3)
+test(3){
+  3>10 ??? false 
+  3>5 ??? false 
+  return 3-1 =2
+}
+
+result=12+24+2=38
