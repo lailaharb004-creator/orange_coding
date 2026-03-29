@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Storage Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input { display: block; margin: 10px 0; padding: 8px; width: 250px; }
+    button { padding: 8px 16px; }
+    .data-item { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>User Form</h2>
+  <input type="text" class="name" placeholder="Name" />
+  <input type="email" class="email" placeholder="Email" />
+  <button class="btn">Save</button>
+
+  <h3>Saved Users:</h3>
+  <div id="savedData"></div>
+
+  <script>
+    const n = document.querySelector(".name");
+    const e = document.querySelector(".email");
+    const btn = document.querySelector(".btn");
+    const savedDataDiv = document.getElementById("savedData");
+
+    // Load users from localStorage or create empty array
+    let arr = JSON.parse(localStorage.getItem("users")) || [];
+
+    // Function to display all users
+    function displayUsers() {
+      savedDataDiv.innerHTML = ""; // clear previous content
+      if (arr.length === 0) {
+        savedDataDiv.innerHTML = "<p>No users saved yet.</p>";
+        return;
+      }
+      arr.forEach((user, index) => {
+        const div = document.createElement("div");
+        div.classList.add("data-item");
+        div.textContent = `${index + 1}. Name: ${user.name}, Email: ${user.email}`;
+        savedDataDiv.appendChild(div);
+      });
+    }
+
+    // Display users on page load
+    displayUsers();
+
+    // Handle form submission
+    btn.addEventListener("click", function() {
+      if (n.value !== "" && e.value !== "") {
+        // Add new user to array
+        arr.push({ name: n.value, email: e.value });
+        // Save updated array to localStorage
+        localStorage.setItem("users", JSON.stringify(arr));
+        // Update display
+        displayUsers();
+        // Clear input fields
+        n.value = "";
+        e.value = "";
+      } else {
+        alert("Please enter both name and email!");
+      }
+    });
+  </script>
+
+</body>
+</html>

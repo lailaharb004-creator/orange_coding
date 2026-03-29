@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="search" class="s">
+<div class="container"></div>
+
+<script>
+let container = document.querySelector(".container");
+let inp = document.querySelector(".s");
+
+const users = [
+    { name: "Ahmad" },
+    { name: "Ali" },
+    { name: "Sara" },
+    { name: "Lana" }
+];
+
+localStorage.setItem("users", JSON.stringify(users));
+let arr = JSON.parse(localStorage.getItem("users")) || [];
+
+let myDiv = document.createElement("div");
+container.appendChild(myDiv); // show the results
+
+inp.addEventListener("input", function () {
+    if (inp.value === "") {
+        myDiv.textContent = "";
+        return;
+    }
+
+    let filtered = arr.filter(user =>
+        user.name.toLowerCase().includes(inp.value.toLowerCase())
+    );
+
+    myDiv.textContent = filtered.length > 0
+        ? filtered.map(u => u.name).join(", ")
+        : "No results found"; // bonus feature
+});
+
+        
+    
+
+
+    </script>
+</body>
+</html>
