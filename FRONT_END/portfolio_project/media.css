@@ -1,0 +1,87 @@
+@media (max-width:600px ){
+    #menu-toggle{
+    display:none;
+}
+    .menu-btn{
+    display:block;
+}
+
+nav ul{
+    display: none;
+
+}
+nav{
+    position: relative;
+    
+}
+
+#menu-toggle:checked + .menu-btn + ul {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center ;
+  position: absolute;
+  height:50vh;
+  background-color: brown;
+  width:40%;
+  width: auto; /* لغيت الـ 100% */
+    display: flex;
+    gap: 10px;
+ 
+  
+}
+body{
+    background-attachment: scroll; /* الـ fixed أحياناً بعمل مشاكل في متصفحات الموبايل */
+    background-position: center bottom;
+      background-image: url("betidraws-wolf-9766240_1920.jpg");
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: cover;
+}
+.two p{
+    padding-top: 120px; /* هاد بنزل النص تحت الناف بار الثابت */
+    text-align: left;
+    padding-left: 5%;
+}
+.flip{
+    perspective: 1000px;
+}
+.two{
+     transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.card:hover .two {
+  transform: rotateY(180deg);
+}
+.two ,.three{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

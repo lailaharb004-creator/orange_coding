@@ -1,0 +1,44 @@
+var arr= [5,10,15]
+var result= []
+
+for (var i=0;i<arr.length;i++) {
+var val=arr[i]
+
+switch (true) {
+case val>10:
+result[result.length]=val*2
+break
+case val>5:
+result[result.length]=val+5
+break
+default:
+result[result.length]=val-1
+  }
+}
+
+console.log(result)
+
+
+i=0 
+val=5 
+val>10 ?? false 
+val>5 ?? falsee 
+default 
+result[result.length]=result[0]=5-1=4 
+result[0]=4 
+
+
+
+
+i=1
+val=10 
+val >10 ??? false 
+val>5 ??? true 
+result[result.length]=result[1]=15
+
+i=2 
+val=15 
+val >10 ?? true 
+result[result.length]=result[2]=30
+
+result=[4,9,14]

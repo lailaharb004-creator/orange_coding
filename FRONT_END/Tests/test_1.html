@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        // const json='{"city":"Amman","country":"Jordan"}';
+
+        // const obj=JSON.parse(json);
+        // /*
+        // constobj={
+        // city:"Amman",
+        // country:"Jordan"
+        
+        // };
+
+        // */
+
+        // console.log(obj.city);//Amman
+
+        // const product= {
+        // name:"Laptop",
+        // price:500
+        // };
+        
+        // const json=JSON.stringify(product);
+        // /*
+        // const json={"name":"Laptop","price":500};
+        // */
+        // console.log(json);//'{"name":"Laptop","price":500}'
+
+
+        // Fetching data from an API (example: fake JSON placeholder service)
+    // fetch('https://jsonplaceholder.typicode.com/users')
+    // .then(response => {
+    //     // Convert the response body to JSON
+    //     return response.json();
+    // })
+    // .then(data => {
+    //     // Use the API data
+    //     console.log(data);
+    // })
+    // .catch(error => {
+    //     // Handle network or parsing errors
+    //     console.error('Error fetching data:', error);
+    // });
+
+        let container = document.getElementById("container");
+
+fetch('https://api.github.com/users')
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(user => {
+      let div = document.createElement("div");
+
+      div.innerHTML = `
+        <img src="${user.avatar_url}" width="50">
+        <p>${user.login}</p>
+      `;
+
+      container.appendChild(div);
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

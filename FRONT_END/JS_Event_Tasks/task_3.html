@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="inp">
+    <button name="BUTTON">ADD</button>
+    <ul></ul>
+    <script>
+        let btn=document.querySelector("button");
+        let list=document.querySelector("ul");
+        let inp=document.querySelector("input");
+        let body=document.body;
+        let el;
+        btn.addEventListener("click", ()=>{
+            el=document.createElement("li");
+            el.textContent=inp.value;
+            el.style.width="50%"
+            list.appendChild(el);
+            inp.value=""
+            let btttn=document.createElement("button");
+            btttn.textContent="Delete";
+            el.appendChild(btttn);
+           
+            btttn.style.width="50%";
+            btttn.style.backgroundColor="#4C5C2D";
+           
+           
+
+
+
+        });
+         list.addEventListener("click", (e) => {
+            if (e.target.tagName === "BUTTON") {
+                let li = e.target.parentElement;
+                li.remove();
+            }
+        });
+         
+        btn.style.width="20%";
+        btn.style.backgroundColor="#4C5C2D";
+        list.style.width="50%";
+        list.style.display="flex";
+
+        list.style.justifyContent="space-between";
+    </script>
+
+</body>
+</html>

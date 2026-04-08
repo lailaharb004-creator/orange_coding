@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option></option>
+        <option value="In">India</option>
+        <option value="Us">United State</option>
+        <option value="Ja">Japan</option>
+        
+    </select>
+    <div>
+    <img id="flag" src="" >
+    </div>
+    <script>
+        let select=document.querySelector("select");
+        let flag=document.querySelector("img");
+
+        select.addEventListener("change",()=>{
+            let opt=select.value;
+            let source;
+
+            if (opt==="In")
+                source="flag.png";
+            else if (opt==="Us")
+                source="united-states.png";
+            else 
+                source="japan.png";
+
+            flag.src=source;
+
+
+
+
+
+        });
+    </script>
+    
+</body>
+</html>

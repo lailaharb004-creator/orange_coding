@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .assets-form{
+            width:50%;
+            height:50vh;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>My Assets</h1>
+    <form class="assets-form">
+        <select class="type">
+        
+            <option>Jewelry</option>
+            <option >Bars</option>
+            <option >Coins</option>
+
+        </select>
+        <select class="category">
+            
+        </select>
+        <select class="karat">
+            <option>14K</option>
+            <option>18K</option>
+            <option>21K</option>
+            <option>22K</option>
+            <option>24K</option>
+        </select>
+        <input type="date" class="pur-date" placeholder="Purchase Date">
+        <input type="number" class="pur-price" placeholder="Purchase Price">
+        <input type="number" class="weight" placeholder="Weight">
+        <input type="file" class="image" placeholder="Drag Image Here">
+        
+
+
+
+
+    </form>
+    <script>
+       
+        let type=document.querySelector(".type");
+        let categorySelect=document.querySelector(".category");
+        const categories = {
+                Jewelry: ["Ring", "Necklace", "Bracelet", "Earrings", "Pendant"],
+                Bars: ["1 kg Bar", "100 g Bar", "Bullion Bar"],
+                Coins: ["Bullion Coin", "Commemorative Coin", "Collector Coin"]
+            };
+        function fillCategories(type){
+            categorySelect.innerHTML="";
+            categories[type].forEach(cat => {
+            const option = document.createElement("option");
+            option.value = cat;
+            option.textContent = cat;
+            categorySelect.appendChild(option);
+        });
+    }
+        fillCategories(type.value);
+        type.addEventListener("change", (e) => {
+            fillCategories(e.target.value);
+        });
+       
+       
+    </script>
+</body>
+</html>
