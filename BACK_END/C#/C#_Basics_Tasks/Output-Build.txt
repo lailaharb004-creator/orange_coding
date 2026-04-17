@@ -1,0 +1,6 @@
+﻿Build started at 10:07 PM...
+1>------ Build started: Project: C#_Basics_Tasks, Configuration: Debug Any CPU ------
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>C#_Basics_Tasks -> C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\bin\Debug\net8.0\C#_Basics_Tasks.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 10:07 PM and took 00.990 seconds ==========

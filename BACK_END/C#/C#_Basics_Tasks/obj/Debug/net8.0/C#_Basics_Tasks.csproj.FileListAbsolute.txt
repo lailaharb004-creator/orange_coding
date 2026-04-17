@@ -1,0 +1,15 @@
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\bin\Debug\net8.0\C#_Basics_Tasks.exe
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\bin\Debug\net8.0\C#_Basics_Tasks.deps.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\bin\Debug\net8.0\C#_Basics_Tasks.runtimeconfig.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\bin\Debug\net8.0\C#_Basics_Tasks.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\bin\Debug\net8.0\C#_Basics_Tasks.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\C#_Basics_Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\C#_Basics_Tasks.AssemblyInfoInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\C#_Basics_Tasks.AssemblyInfo.cs
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\C#_Basics_Tasks.csproj.CoreCompileInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\C#_Basics_Tasks.sourcelink.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\C#_Basics_Tasks.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\refint\C#_Basics_Tasks.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\C#_Basics_Tasks.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\C#_Basics_Tasks.genruntimeconfig.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Basics_Tasks\obj\Debug\net8.0\ref\C#_Basics_Tasks.dll
