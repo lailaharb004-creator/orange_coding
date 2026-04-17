@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#_Loops_Strings_Arrays_Part_Two", "C#_Loops_Strings_Arrays_Part_Two.csproj", "{AE5B52F4-4CBE-4579-80A5-B74377677BAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE5B52F4-4CBE-4579-80A5-B74377677BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5B52F4-4CBE-4579-80A5-B74377677BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5B52F4-4CBE-4579-80A5-B74377677BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5B52F4-4CBE-4579-80A5-B74377677BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38B4C0C5-5C3A-4993-9E0C-8DC882350FEA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\bin\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.exe
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\bin\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.deps.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\bin\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.runtimeconfig.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\bin\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\bin\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.AssemblyInfoInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.AssemblyInfo.cs
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.csproj.CoreCompileInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.sourcelink.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\refint\C#_Loops_Strings_Arrays_Part_Two.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\C#_Loops_Strings_Arrays_Part_Two.genruntimeconfig.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Loops_Strings_Arrays_Part_Two\obj\Debug\net8.0\ref\C#_Loops_Strings_Arrays_Part_Two.dll
