@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+             display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            margin-top:50px;
+            color:#718457;
+        }
+        .card {
+            width:25%;
+            height:50vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #C3CC9B;
+            border-radius: 50px;
+            
+        }
+        .name{
+            width:80%;
+            height:5vh;
+            border-radius: 20px;
+            border:none;
+            padding:10px;
+            background-color: #E4DFB5;
+        }
+        .btn{
+            width:50%;
+             height:5vh;
+            border-radius: 20px;
+            border:none;
+            color:#718457;
+            background-color: #E4DFB5;
+            font-weight: bolder;
+
+        }
+        .name::placeholder{
+
+             color:#718457;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Save Simple Data</h1>
+        <input type="text" class="name" placeholder="write name here">
+        <div class="saved"></div>
+        <input type="submit" class="btn">
+    </div>
+
+
+    <script>
+        let btn=document.querySelector(".btn");
+        let name=document.querySelector(".name");
+        let savedName=document.querySelector(".saved");
+
+        if (localStorage.getItem("name")){
+            savedName.textContent=localStorage.getItem("name");
+            
+        }
+        
+
+        btn.addEventListener("click",()=>{
+            console.log(name.value);
+
+            // save data in local storage 
+            localStorage.setItem("name",name.value);
+            savedName.textContent=localStorage.getItem("name");
+
+
+        });
+        savedName.style.fontWeight="bolder";
+        savedName.style.fontSize="50px";
+
+
+
+    </script>
+   
+</body>
+</html>

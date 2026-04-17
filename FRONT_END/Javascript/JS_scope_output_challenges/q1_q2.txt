@@ -1,0 +1,14 @@
+console.log(a)
+var a=10
+
+///undefined 
+/// in the normal state we can't use variable before declare it 
+but this is a bug on JS that when we declare a variable using var 
+it will give us undefined not error 
+
+
+console.log(a)
+let a=10
+//// error 
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #BFC9D1;
+        }
+        .one{
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            
+            width:40%;
+            margin-left:30%;
+           height:auto;
+            background-color: #3c505f;
+            margin-top: 10px;;
+            padding: 30px 0px 30px 0px;;
+            
+        }
+        .two{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+             width: 50%;
+
+        }
+        .three{
+           display: flex;
+           flex-direction: column;
+            justify-content: space-between;
+            
+            width:100%;
+            
+           
+
+        }
+        
+        .three div{
+            width:100%;
+            
+           
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+           
+            justify-content: space-around;
+            width: 90%;
+            height:auto;
+          
+            padding-top: 10px;
+
+        }
+        .container{
+
+            display: flex;
+             justify-content:space-between;
+           
+            width:100%;
+        }
+        .button{
+            width:40%;
+            color:white;
+            background-color: #4C8CE4;
+            border:none;
+            border-radius: 5px;;
+             padding: 5px;;
+        }
+        input{
+            
+             width: 100%;
+              border:none;
+              padding: 5px;
+            border-radius: 5px;;
+            margin-top: 5px;
+
+        }
+        .four{
+            
+            width:40%;
+            margin-left:30%;
+            background-color: #435663;
+            
+            padding: 10px 25px 10px;
+            margin-top: 40px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>Basic Info Form</h1>
+    
+    <form  id="form" >
+        <div class="container">
+            <div class="two">
+                <label >First Name:</label>
+                <label >Last Name:</label>
+                <label >Email:</label>
+            </div>
+            <div class="three" >
+              <div class="fn"><input type="text" placeholder="Enter Your First Name" id="Fname"><small></small></div> 
+              <div class="ln"><input type="text" placeholder="Enter Your Last Name" id="Lname"><small></small></div>
+              <div class="eml"><input type="text" placeholder="Enter Your Email" id="email"><small></small></div>
+                
+
+            </div>
+        </div>
+        <input type="submit" class="button">
+        
+        
+
+    </form>
+    </div>
+    <div class="four">
+        <h2>Submited Data</h2>
+        <p id="f">First Name:</p>
+        <p id="l">Last Name:</p>
+        <p id="em">Email:</p>
+
+    </div>
+    <script>
+        let Fname=document.getElementById("Fname");
+        let Lname=document.getElementById("Lname");
+        let email=document.getElementById("email");
+
+        let f=document.getElementById("f");
+        let l=document.getElementById("l");
+        let em=document.getElementById("em");
+
+        let fn=document.getElementsByClassName("fn");
+        let ln=document.getElementsByClassName("ln");
+        let eml=document.getElementsByClassName("eml");
+
+
+        let form=document.getElementById("form");
+
+        Fname.addEventListener("input", ()=> Fname.nextElementSibling.textContent="");
+        Lname.addEventListener("input", ()=> Lname.nextElementSibling.textContent="");
+        email.addEventListener("input", ()=> email.nextElementSibling.textContent="");
+
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+
+            let isvalid=true;
+            Fname.nextElementSibling.textContent = "";
+            Lname.nextElementSibling.textContent = "";
+            email.nextElementSibling.textContent = "";
+
+
+             if (Fname.value===""){
+                Fname.nextElementSibling.textContent="This First Name Field Required";
+                Fname.nextElementSibling.style.color="red";
+                isvalid=false;
+        }
+            else if (!Fname.value.match(/^[a-zA-Z]+$/)){
+                 Fname.nextElementSibling.textContent="Enter Only Letters";
+                 Fname.nextElementSibling.style.color="red";
+                 isvalid=false;
+            }
+           
+            
+            if (Lname.value===""){
+                    Lname.nextElementSibling.textContent="This Last Name Field Required";
+                    Lname.nextElementSibling.style.color="red";
+                    isvalid=false;
+            }
+             else if (!Lname.value.match(/^[a-zA-Z]+$/)){
+                Lname.nextElementSibling.textContent="Enter Only Letters";
+                 Lname.nextElementSibling.style.color="red";
+                 isvalid=false;
+              
+            }
+            
+             
+
+            if (email.value===""){
+                email.nextElementSibling.textContent="This Email Field Required";
+                email.nextElementSibling.style.color="red";
+                isvalid=false;
+            }
+        
+         if(isvalid===true){
+               f.textContent = "First Name: " + Fname.value;
+                l.textContent = "Last Name: " + Lname.value;
+                em.textContent = "Email: " + email.value;
+
+
+         }
+
+
+        
+
+            
+            
+            
+
+            
+        });
+       
+        
+        
+
+    </script>
+</body>
+</html>

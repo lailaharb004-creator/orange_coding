@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+             background-color:#2b4763;
+            
+           font-weight: bold;
+            
+            color:rgba(215, 215, 215,0.3);
+            
+           
+           
+        }
+        .container{
+            width:auto;
+            display: flex;
+            flex-wrap: wrap;
+           
+            /* background-color: #262626; */
+            align-items: center;
+            gap:20px;
+            align-content: center;
+            height: auto;
+            
+            margin: 50px;
+            padding: 20px 50px;
+           
+        }
+        span{
+            color:#ca8c06;
+            font-weight: bold;
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1><i class="fa-brands fa-github"></i>GitHub Users <span>Viewer</span></h1>
+    <div class="container">
+        
+
+    </div>
+    <script>
+        const container=document.querySelector("div");
+        fetch('https://api.github.com/users')
+            .then (response  => response.json())
+            .then (users =>{
+                users.forEach((user ,index)=>{
+                    if(index<11){
+                        const card=document.createElement("div");
+                        card.classList.add("card");
+
+                        const image=document.createElement("img");
+                        image.src=user.avatar_url;
+                        image.width=100;
+
+                        const name=document.createElement("h2");
+                        name.textContent=user.login;
+
+
+                        const link=document.createElement("a");
+                        link.href=user.html_url;
+                        link.target="_blank";
+                        link.innerHTML="<i class='fa-solid fa-arrow-up-right-from-square'></i>"+"View Profile";
+                        link.style.textDecoration="none";
+                        link.style.color="#ca8c06";
+                        link.style.fontWeight="bold"
+
+                        card.appendChild(image);
+                        card.appendChild(name);
+                        card.appendChild(link);
+                        
+                        card.style.width="calc(20% - 20px)";
+                        card.style.border="none";
+                        card.style.borderRadius="5px";
+                        card.style.backgroundColor="rgba(215, 215, 215,0.1)";
+                        card.style.display="flex";
+                        card.style.flexDirection="column";
+                        card.style.justifyContent="center";
+                        card.style.alignItems="center";
+                       card.style.color="#043464";
+                        card.style.fontWeight="bold";
+                        container.appendChild(card);
+                        card.addEventListener("mouseenter",()=>{
+                           card.style.transform = "scale(1.05)";
+                           card.style.transition = "0.1s";
+                        });
+                        card.addEventListener("mouseleave",()=>{
+                           card.style.transform = "scale(1)";
+                        });
+
+
+                    }
+            
+
+                });
+
+            });
+    </script>
+    
+</body>
+</html>
