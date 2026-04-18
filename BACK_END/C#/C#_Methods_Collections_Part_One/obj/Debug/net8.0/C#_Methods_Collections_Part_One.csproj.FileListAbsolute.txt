@@ -1,0 +1,15 @@
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\bin\Debug\net8.0\C#_Methods_Collections_Part_One.exe
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\bin\Debug\net8.0\C#_Methods_Collections_Part_One.deps.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\bin\Debug\net8.0\C#_Methods_Collections_Part_One.runtimeconfig.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\bin\Debug\net8.0\C#_Methods_Collections_Part_One.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\bin\Debug\net8.0\C#_Methods_Collections_Part_One.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\C#_Methods_Collections_Part_One.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\C#_Methods_Collections_Part_One.AssemblyInfoInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\C#_Methods_Collections_Part_One.AssemblyInfo.cs
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\C#_Methods_Collections_Part_One.csproj.CoreCompileInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\C#_Methods_Collections_Part_One.sourcelink.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\C#_Methods_Collections_Part_One.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\refint\C#_Methods_Collections_Part_One.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\C#_Methods_Collections_Part_One.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\C#_Methods_Collections_Part_One.genruntimeconfig.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\obj\Debug\net8.0\ref\C#_Methods_Collections_Part_One.dll

@@ -1,0 +1,6 @@
+﻿Build started at 3:54 PM...
+1>------ Build started: Project: C#_Methods_Collections_Part_One, Configuration: Debug Any CPU ------
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>C#_Methods_Collections_Part_One -> C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Methods_Collections_Part_One\bin\Debug\net8.0\C#_Methods_Collections_Part_One.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 3:54 PM and took 00.323 seconds ==========
