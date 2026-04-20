@@ -1,0 +1,15 @@
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\bin\Debug\net8.0\C#_Problem_Solving_3.exe
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\bin\Debug\net8.0\C#_Problem_Solving_3.deps.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\bin\Debug\net8.0\C#_Problem_Solving_3.runtimeconfig.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\bin\Debug\net8.0\C#_Problem_Solving_3.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\bin\Debug\net8.0\C#_Problem_Solving_3.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\C#_Problem_Solving_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\C#_Problem_Solving_3.AssemblyInfoInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\C#_Problem_Solving_3.AssemblyInfo.cs
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\C#_Problem_Solving_3.csproj.CoreCompileInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\C#_Problem_Solving_3.sourcelink.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\C#_Problem_Solving_3.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\refint\C#_Problem_Solving_3.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\C#_Problem_Solving_3.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\C#_Problem_Solving_3.genruntimeconfig.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_Problem_Solving_3\obj\Debug\net8.0\ref\C#_Problem_Solving_3.dll
