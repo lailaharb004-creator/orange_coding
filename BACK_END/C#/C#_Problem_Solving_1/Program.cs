@@ -4,29 +4,30 @@ using System.Linq;
 
 public class Program
 {
-    public static void Main (string[] args)
+    public static void Main(string[] args)
     {
         /* Task 1*/
 
-        Console.WriteLine("Minutes To Seconds -> "+ ConvertToSec(5));
+        Console.WriteLine("Minutes To Seconds -> " + ConvertToSec(5));
 
         /* Task 2 */
-        Console.WriteLine("Increment By One -> "+ IncrementByOne(5));
+        Console.WriteLine("Increment By One -> " + IncrementByOne(5));
 
         /* Task 3 */
         int[] arr = { 90, 67, 45, 124 };
-        Console.WriteLine("First Element In Only Numbers Array -> "+OnlyNumbersArray(arr));
+        Console.WriteLine("First Element In Only Numbers Array -> " + OnlyNumbersArray(arr));
 
         /* Task 4 */
-        Console.WriteLine("The Area Of Rectangle -> "+AreaOfRectangle(5,4));
+        Console.WriteLine("The Area Of Rectangle -> " + AreaOfRectangle(5, 4));
 
         /* Task 5 */
         int[] arr_2 = { 5, 2, 2, 1, 8, 66, 55, 77, 34, 9, 55, 1 };
         int[] evenArray = EvenNumberEvenIndex(arr_2);
 
         Console.Write("[  ");
-        foreach (int i in evenArray) {
-            Console.Write(i+" ");
+        foreach (int i in evenArray)
+        {
+            Console.Write(i + " ");
         }
         Console.Write(" ]");
         Console.WriteLine();
@@ -44,25 +45,64 @@ public class Program
         Console.Write(" ]");
         Console.WriteLine();
 
+        /* Task 7 */
+        int[] arr_4 = { 44, 5, 4, 3, 2, 10 };
+        int[] powerElementIndexArray = powerElementIndex(arr_4);
 
 
 
+        Console.Write("[  ");
+        foreach (int i in powerElementIndexArray)
+        {
+            Console.Write(i + " ");
+        }
+        Console.Write(" ]");
+        Console.WriteLine();
 
 
+        /* Task 8*/
+        int num1 = 5;
+        int num2 = 4;
+        Console.WriteLine($"The Multiplication of ({num1}, {num2}) -> " + multiplication2(num1, num2));
+
+        num1 = 4; num2 = 5;
+        Console.WriteLine($"The Multiplication of ({num1}, {num2}) -> " + multiplication2(num1, num2));
+
+        num1 = 2;num2 = 8;
+        Console.WriteLine($"The Multiplication of ({num1}, {num2}) -> " + multiplication2(num1, num2));
+
+        num1 = 8;num2 = 2;
+        Console.WriteLine($"The Multiplication of ({num1}, {num2}) -> " + multiplication2(num1, num2));
+
+        num1 = 7;num2 = 6;
+        Console.WriteLine($"The Multiplication of ({num1}, {num2}) -> " + multiplication2(num1, num2));
+
+        num1 = 6;num2 = 7;
+        Console.WriteLine($"The Multiplication of ({num1}, {num2}) -> " + multiplication2(num1, num2));
 
 
+        /* Task 9 */
+        num1 = 4; num2 = 5;
+        Console.WriteLine($"The Multiplication from {num1} to {num2} -> " + multi2(num1, num2));
+
+        num1 =3; num2 = 6;
+        Console.WriteLine($"The Multiplication from {num1} to {num2} -> " + multi2(num1, num2));
+
+        num1 = 4; num2 = 2;
+        Console.WriteLine($"The Multiplication from {num1} to {num2} -> " + multi2(num1, num2));
+
+        num1 = 4; num2 = 4;
+        Console.WriteLine($"The Multiplication from {num1} to {num2} -> " + multi2(num1, num2));
+
+        num1 = 0; num2 = 5;
+        Console.WriteLine($"The Multiplication from {num1} to {num2} -> " + multi2(num1, num2));
 
 
-
-
-
-
-
-
-
-
-
-
+        /* Task 10 */
+        int[] arr_5 = { 1, 2, 3, 8, 9 };
+        int[] arr_6 = { 1, 2, 3, 8, 9, 77 };
+        Console.WriteLine("The Average of Numbers In The Array -> " + avgArray(arr_5));
+        Console.WriteLine("The Average of Numbers In The Array -> " + avgArray(arr_6));
 
 
 
@@ -83,7 +123,7 @@ public class Program
 
     }
     /* Task 1*/
-        static int ConvertToSec(int minutes)
+    static int ConvertToSec(int minutes)
     {
         return minutes * 60;
     }
@@ -102,17 +142,17 @@ public class Program
     }
 
     /* Task 4 */
-    static double AreaOfRectangle(double width , double height)
+    static double AreaOfRectangle(double width, double height)
     {
-        return width* height;
+        return width * height;
     }
     /* Task 5 */
-    static int []  EvenNumberEvenIndex(int[] arr)
+    static int[] EvenNumberEvenIndex(int[] arr)
     {
         int evenCount = 0;
-        for(int i = 0; i < arr.Length; i++)
+        for (int i = 0; i < arr.Length; i++)
         {
-            if (arr[i] % 2 == 0 && i %2 ==0)
+            if (arr[i] % 2 == 0 && i % 2 == 0)
             {
                 evenCount++;
             }
@@ -131,7 +171,7 @@ public class Program
     }
 
     /* Task 6  */
-    static string[] evenIndexOddLength (string[] arr)
+    static string[] evenIndexOddLength(string[] arr)
     {
         int evenIndexOddLengthCount = 0;
         for (int i = 0; i < arr.Length; i++)
@@ -155,18 +195,89 @@ public class Program
     }
 
     /* Task  7 */
-    static int[] powerElementIndex (int[] arr)
+    static int[] powerElementIndex(int[] arr)
     {
 
+
+        int power = 1;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (i == 0)
+            {
+                arr[i] = 1;
+            }
+            else
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    power *= arr[i];
+                }
+                arr[i] = power;
+            }
+            power = 1;
+        }
+        return arr;
     }
 
 
+    /* Task  8 */
+    static int multiplication2(int num1, int num2)
+    {
+        int sum = 0;
+        for (int i = 1; i <= num1; i++)
+        {
+
+            sum += num2;
 
 
+        }
+        return sum;
 
+    }
 
+    /* Task 9 */
+    static int multi2(int num1, int num2) { 
+        if (num1 ==num2)
+        {
+            return num1;
+        }
+        else if (num1 < num2)
+        {
+            int multi = 1;
+            for (int i=num1; i<=num2; i++)
+            {
+                multi *= i;
+            }
+            return multi;
+        }
+        else if (num1 >num2)
+        {
+            int multi = 1;
+            for (int i = num2; i <= num1; i++)
+            {
+                multi *= i;
+            }
+            return multi;
+        }
+        else
+        {
+            return 0;
+        }
+ 
+    }
 
+    /* Task 10 */
 
+    static double avgArray(int[] arr)
+    {
+        double sum = 0;
+        for (int i = 0; i < arr.Length; i++)
+        {
+            sum += arr[i];
+        }
+        double avg = sum / arr.Length;
+        return avg;
+    }
 
 
 
