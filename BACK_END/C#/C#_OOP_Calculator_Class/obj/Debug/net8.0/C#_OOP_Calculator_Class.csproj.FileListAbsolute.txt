@@ -1,0 +1,15 @@
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\bin\Debug\net8.0\C#_OOP_Calculator_Class.exe
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\bin\Debug\net8.0\C#_OOP_Calculator_Class.deps.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\bin\Debug\net8.0\C#_OOP_Calculator_Class.runtimeconfig.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\bin\Debug\net8.0\C#_OOP_Calculator_Class.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\bin\Debug\net8.0\C#_OOP_Calculator_Class.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\C#_OOP_Calculator_Class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\C#_OOP_Calculator_Class.AssemblyInfoInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\C#_OOP_Calculator_Class.AssemblyInfo.cs
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\C#_OOP_Calculator_Class.csproj.CoreCompileInputs.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\C#_OOP_Calculator_Class.sourcelink.json
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\C#_OOP_Calculator_Class.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\refint\C#_OOP_Calculator_Class.dll
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\C#_OOP_Calculator_Class.pdb
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\C#_OOP_Calculator_Class.genruntimeconfig.cache
+C:\Users\laila\OneDrive\Desktop\web_orange\BACK_END\C#\C#_OOP_Calculator_Class\obj\Debug\net8.0\ref\C#_OOP_Calculator_Class.dll
