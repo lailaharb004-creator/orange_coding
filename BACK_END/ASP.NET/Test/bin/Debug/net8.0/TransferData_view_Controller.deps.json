@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TransferData_view_Controller/1.0.0": {
+        "runtime": {
+          "TransferData_view_Controller.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TransferData_view_Controller/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

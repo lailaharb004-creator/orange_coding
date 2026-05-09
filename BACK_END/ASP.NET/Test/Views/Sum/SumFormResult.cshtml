@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* <form method="post">
+    <div class="row">
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First Number" name="n1" value="@TempData["n1"]">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Second Number" name="n2" value="@TempData["n2"]">
+        </div>
+
+        
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Result " value="@TempData["Sum"]">
+
+        </div>
+
+    </div>
+</form> *@
+@* <form method="post">
+    <div class="row">
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First Number" name="n1" value="@ViewData["n1"]">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Second Number" name="n2" value="@ViewData["n2"]">
+        </div>
+
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Result " value="@ViewData["Sum"]">
+
+        </div>
+
+    </div>
+</form> *@
+@{
+    
+}
+<form method="post">
+    <div class="row">
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First Number" name="n1" value="@Context.Session.GetInt32("n1")">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Second Number" name="n2" value="@Context.Session.GetInt32("n2")">
+        </div>
+
+
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Result " value="@Context.Session.GetInt32("Sum")">
+
+        </div>
+
+    </div>
+</form>
