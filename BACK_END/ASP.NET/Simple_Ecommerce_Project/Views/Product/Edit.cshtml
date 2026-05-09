@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Product
+@{
+    Layout = "_AdminLayout";
+}
+
+<form method="post" enctype="multipart/form-data" class="mt-5 p-5 shadow border-0" style="border-radius: 20px; background-color: #fcfcfc;">
+    <div class="row pb-2">
+        <h2 class="text-primary">Add New Product</h2>
+        <hr />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ProductTitle" class="form-label fw-bold"></label>
+        <input asp-for="ProductTitle" class="form-control border-0 shadow-sm" style="border-radius: 10px;" />
+        <span asp-validation-for="ProductTitle" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ProductPrice" class="form-label fw-bold"></label>
+        <input asp-for="ProductPrice" class="form-control border-0 shadow-sm" style="border-radius: 10px;" />
+        <span asp-validation-for="ProductPrice" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label fw-bold">Upload Product Image</label>
+        <input type="file" name="file" class="form-control" /> <!-- لاحظي اسم الحقل 'file' -->
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label fw-bold">Select Category</label>
+        <select asp-for="ProductCategoryId" asp-items="@(ViewBag.CategoryList as IEnumerable<SelectListItem>)" class="form-select border-0 shadow-sm" style="border-radius: 10px;">
+            <option disabled selected>-- Choose Category --</option>
+        </select>
+        <span asp-validation-for="ProductCategoryId" class="text-danger"></span>
+    </div>
+
+    <div class="row pt-3">
+        <div class="col-6 col-md-3">
+            <button type="submit" class="btn btn-primary form-control rounded-pill shadow">Create</button>
+        </div>
+        <div class="col-6 col-md-3">
+            <a asp-action="Index" class="btn btn-outline-secondary border form-control rounded-pill shadow">Back to List</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

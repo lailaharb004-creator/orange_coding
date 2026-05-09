@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+@model Category
+
+<div class="container mt-5">
+    <form method="post" enctype="multipart/form-data">
+        <div class="border p-4 shadow-sm">
+            <div class="row pb-2">
+                <h2 class="text-primary">Create New Category</h2>
+                <hr />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="CategoryName" class="form-label"></label>
+                <input asp-for="CategoryName" class="form-control" />
+                
+                <span asp-validation-for="CategoryName" class="text-danger"></span>
+            </div>
+
+            
+
+            <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+            <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">
+                Back to List
+            </a>
+            <div class="mb-3">
+                <label>Category Image</label>
+                <input type="file" name="file" class="form-control" />
+            </div>
+        </div>
+        
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+@model Category
+
+<div class="container mt-5">
+
+    <form method="post" asp-action="Delete">
+       
+        <input asp-for="CategoryId" hidden />
+
+        <div class="border p-4 shadow-sm">
+            <div class="row pb-2">
+                <h2 class="text-danger">Delete Category</h2>
+                <h6 class="text-muted">Are you sure you want to delete this category?</h6>
+                <hr />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="CategoryName" class="form-label"></label>
+            
+                <input asp-for="CategoryName" disabled class="form-control" />
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                  
+                    <button type="submit" class="btn btn-danger form-control">Delete</button>
+                </div>
+                <div class="col-6">
+                 
+                    <a asp-controller="Category" asp-action="Index" class="btn btn-secondary border form-control">
+                        Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

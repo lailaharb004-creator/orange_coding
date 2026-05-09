@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+@model IEnumerable<Category>
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col-6">
+            <h2 class="text-primary">Category List</h2>
+        </div>
+        <div class="col-6 text-end">
+       
+            <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Create New Category
+            </a>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Category Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td>@obj.CategoryName</td>
+                    <td>
+                      
+                        <div class="btn-group" role="group">
+                            <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.CategoryId" class="btn btn-primary mx-2">
+                                Edit
+                            </a>
+                            <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.CategoryId" class="btn btn-danger mx-2">
+                                Delete
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="@obj.ImageUrl" width="50px" style="border-radius:5px; border:1px solid #bbb" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

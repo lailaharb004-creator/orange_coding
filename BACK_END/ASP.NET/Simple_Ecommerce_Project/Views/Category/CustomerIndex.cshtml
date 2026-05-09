@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Category>
+@{
+   
+    Layout = "_CustomerLayout";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        @foreach (var obj in Model)
+        {
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm border-0 transition-hover" style="border-radius: 20px; overflow: hidden; background-color: #fff;">
+
+                    
+                    <div style="height: 220px; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; padding: 10px;">
+                        <img class="card-img-top" src="@obj.ImageUrl" alt="@obj.CategoryName"
+                             style="max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain;">
+                    </div>
+
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold mb-2" style="color: #212529;">@obj.CategoryName</h5>
+                            <p class="card-text text-muted small">Explore our curated collection of @obj.CategoryName items.</p>
+                        </div>
+
+                        <div class="d-grid mt-4">
+
+                            @* داخل لوب الأقسام *@
+                            <a asp-controller="Product" asp-action="ByCategory" asp-route-categoryId="@obj.CategoryId" class="btn btn-primary">
+                                Show Products
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .transition-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .transition-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12) !important;
+        }
+   
+    body {
+        background-color: #fdfdfd;
+    }
+</style>
